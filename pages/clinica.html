@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clinica</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;600;900&display=swap"
+    rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="../css/footer.css" />
+</head>
+<style>
+  .contenedor {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .texto {
+    width: 50%;
+    height: 100%;
+    padding: 100px;
+  }
+
+  .contactar,
+  .texto-contacto {
+    border: none;
+    width: 150px;
+    padding: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #28b2ce;
+    color: white;
+  }
+</style>
+
+<body>
+
+  <script src="../js/navbar.js"></script>
+  <div class="contenedor">
+    <img src="../img/about.png" class="d-block w-50" alt="" />
+    <div class="texto w-50">
+      <p class="bienvenida">
+        En Medic Pet, no solo cuidamos a tus mascotas; las amamos como si
+        fueran nuestras propias familias. Nuestra dedicación va más allá de la
+        atención veterinaria convencional; nos esforzamos por proporcionar
+        experiencias únicas y cuidados excepcionales a cada peludo amigo que
+        ingresa por nuestras puertas.
+      </p>
+      <button class="contactar">
+        <a class="texto-contacto ui-button ui-widget ui-corner-all  " href="./contacto.html">Contacto</a>
+      </button>
+    </div>
+  </div>
+  <script>
+    jQuery(function (jQuery) {
+      $(".widget input[type=submit], .widget a, .widget button").button();
+      $(".contactar, .texto-contacto").hover(
+        function () {
+          $(this).css({
+            backgroundColor: "#013b46",
+            color: "white",
+          });
+        },
+        function () {
+
+          $(this).css({
+            backgroundColor: "#28b2ce",
+            color: "white",
+          });
+        }
+      );
+    });
+  </script>
+  <div id="footer-alex"></div>
+  <script src="../js/footer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <style>
+    .slider {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(50, 223, 255, 0.7);
+      text-align: center;
+      padding: 100px;
+    }
+
+    .slider p {
+      font-size: 20px;
+    }
+
+    .slider img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .btn-slider-comprar {
+      background-color: #013b46;
+      border: none;
+      width: 150px;
+      padding: 10px;
+      margin-top: 20px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .btn-slider-contacto {
+      background-color: white;
+      border: none;
+      width: 150px;
+      padding: 10px;
+      margin-top: 20px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .btn-texto-comprar {
+      text-decoration: none;
+      color: white;
+      background-color: #013b46;
+    }
+
+    .btn-texto-contacto {
+      text-decoration: none !important;
+      color: #013b46;
+      background-color: white;
+    }
+
+    .contenedor {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .texto {
+      width: 50%;
+      height: 100%;
+      padding: 100px;
+    }
+
+    .bienvenida {
+      font-size: 20px;
+      text-align: justify !important;
+    }
+
+    .contactar,
+    .texto-contacto {
+      border: none;
+      width: 150px;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: #28b2ce;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .botones-slider {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      width: 100%;
+      height: 100%;
+      text-decoration: none !important;
+    }
+
+    .texto-slider {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row-reverse;
+      gap: 50px;
+      width: 100%;
+      height: 100%;
+    }
+
+    .btn-scomprar {
+      text-align: center !important;
+      text-decoration: none;
+      color: white;
+      padding: 11px;
+    }
+
+    .btn-scontacto {
+      text-align: center !important;
+      text-decoration: none;
+      color: #28b2ce;
+      padding: 11px;
+    }
+  </style>
+
+  <body>
+    <script src="./js/navbar.js"></script>
+    <div>
+      <div id="carouselExampleFade" class="carousel slide carousel-fade slider">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="texto-slider">
+              <h1>
+                Profesionales
+                <p>
+                  En Medic Pet, nos enorgullece contar con un equipo de
+                  profesionales altamente capacitados y apasionados por la salud
+                  y el bienestar de tus mascotas. Nuestro compromiso es brindar
+                  atención veterinaria de la más alta calidad, combinando
+                  experiencia con un enfoque compasivo para garantizar la
+                  felicidad y salud de tus queridos compañeros peludos.
+                </p>
+              </h1>
+              <img src="./img/slider-img.png" class="d-block w-50" alt="" />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="texto-slider">
+              <h1>
+                Cuidados
+                <p>
+                  En Medic Pet, entendemos que cada mascota es única, y por eso
+                  ofrecemos cuidados personalizados adaptados a las necesidades
+                  individuales de cada paciente. Desde exámenes de rutina hasta
+                  tratamientos especializados, nos aseguramos de que tu mascota
+                  reciba la atención adecuada en cada etapa de su vida.
+                </p>
+              </h1>
+              <img src="./img/ro.jpg" class="d-block w-50" alt="" />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="texto-slider">
+              <h1>
+                Activos
+                <p>
+                  Nuestra clínica veterinaria está equipada con tecnología de
+                  última generación para proporcionar servicios activos y
+                  efectivos. Realizamos desde chequeos preventivos y
+                  vacunaciones hasta cirugías y tratamientos avanzados. Nos
+                  esforzamos por mantener a tus mascotas saludables y activas a
+                  lo largo de toda su vida.
+                </p>
+              </h1>
+              <img src="./img/chu.jpg" class="d-block w-50" alt="" />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="texto-slider">
+              <h1>
+                Capacitados
+                <p>
+                  En Medic Pet, creemos en la importancia de la educación
+                  continua. Nuestro equipo se somete a capacitación regular para
+                  mantenerse actualizado sobre los avances en medicina
+                  veterinaria, garantizando así que podamos ofrecer los mejores
+                  y más innovadores servicios a nuestros clientes peludos.
+                </p>
+              </h1>
+              <img src="./img/ro2.jpg" class="d-block w-50" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="botones-slider">
+          <div class="btn-slider-comprar">
+            <a
+              class="ui-button ui-widget ui-corner-all btn-scomprar"
+              href="./pages/comprar.html"
+              >Comprar</a
+            >
+          </div>
+          <div class="btn-slider-contacto">
+            <a
+              class="ui-button ui-widget ui-corner-all btn-scontacto"
+              href="./pages/contacto.html"
+              >Contacto</a
+            >
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="contenedor">
+        <img src="./img/about.png" class="d-block w-50" alt="" />
+        <div class="texto w-50 widget">
+          <p class="bienvenida">
+            Bienvenidos a Medic Pet, tu destino confiable para la salud y el
+            bienestar de tus queridas mascotas. En Medic Pet, nos enorgullece
+            ofrecer servicios veterinarios compasivos y de alta calidad para
+            animales de todas las formas y tamaños. Nuestro equipo de
+            veterinarios apasionados y dedicados está aquí para proporcionar
+            cuidados integrales, desde exámenes de rutina hasta tratamientos
+            especializados. Nos esforzamos por crear un entorno cálido y
+            acogedor donde tanto tú como tu mascota se sientan cómodos y
+            atendidos.
+          </p>
+          <div class="contactar">
+            <a
+              class="texto-contacto ui-button ui-widget ui-corner-all"
+              href="../../JQueryiu/pages/contacto.html"
+              >Contacto</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      jQuery(function (jQuery) {
+        $('.widget input[type=submit], .widget a, .widget button').button()
+        $('.contactar, .texto-contacto, .bnt-slider-contacto').hover(
+          function () {
+            $(this).css({
+              backgroundColor: '#013b46',
+              color: 'white',
+            })
+          },
+          function () {
+            $(this).css({
+              backgroundColor: '#28b2ce',
+              color: 'white',
+            })
+          }
+        )
+        $('.btn-slider-comprar, .btn-texto-comprar, .btn-scomprar').hover(
+          function () {
+            $(this).css({
+              backgroundColor: 'white',
+              color: '#013b46',
+              textDecoration: 'none',
+            })
+          },
+          function () {
+            $(this).css({
+              backgroundColor: '#013b46',
+              color: 'white',
+            })
+          }
+        )
+        $('.btn-slider-contacto, .btn-texto-comprar, .btn-scontacto').hover(
+          function () {
+            $(this).css({
+              backgroundColor: '#013b46',
+              color: 'white',
+              textDecoration: 'none',
+            })
+          },
+          function () {
+            $(this).css({
+              backgroundColor: 'white',
+              color: '#013b46',
+            })
+          }
+        )
+      })
+    </script>
+    <div id="footer-alex"></div>
+    <script src="./js/footer.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
