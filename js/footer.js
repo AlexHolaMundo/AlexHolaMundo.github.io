@@ -23,7 +23,7 @@ function createFooter() {
 
   const credits = document.createElement("div");
   credits.className = "creditos";
-  credits.innerHTML = "<p>Realizado por Alex =)</p>";
+  credits.innerHTML = "<p>Realizado por: Alex =)</p>";
   footer.appendChild(credits);
 
   return footer;
