@@ -46,6 +46,7 @@ function createNavbar() {
   addNavItem(navList, "Clinica", "../pages/clinica.html");
   addNavItem(navList, "Contacto", "../pages/contacto.html");
   addNavItem(navList, "Adoptar", "../pages/comprar.html");
+  addNavItem(navList, "Adoptar", "../pages/firebase.html");
 
   document.body.prepend(navbar);
 }
